@@ -93,16 +93,16 @@ draft: false
 	Get-DomainComputer | Select-Object -ExpandProperty dnshostname
 
 	#Get computers by Operating System (e.g., Windows 7, Server 2008)
-Get-DomainComputer | Select-Object name, operatingsystem, operatingsystemversion
+	Get-DomainComputer | Select-Object name, operatingsystem, operatingsystemversion
 
 	#Get Domain Controllers
 	Get-DomainController | Select-Object Name, OSVersion, IPAddress
 
 	#Get DNS-hostname,name, and OS of every machine
-  Get-DomainComputer -Properties OperatingSystem, Name, DnsHostName | Sort-Object -Property DnsHostName
+	Get-DomainComputer -Properties OperatingSystem, Name, DnsHostName | Sort-Object -Property DnsHostName
 
-  #Enumerate Live machines
-  Get-DomainComputer -Ping -Properties OperatingSystem, Name, DnsHostName | Sort-Object -Property DnsHostName
+	#Enumerate Live machines
+	Get-DomainComputer -Ping -Properties OperatingSystem, Name, DnsHostName | Sort-Object -Property DnsHostName
   ```
 
 - **Enum Groups and Group Members:**
@@ -187,21 +187,21 @@ Get-DomainOU -Properties Name | Sort-Object -Property Name
   Get-DomainObjectAcl -ResolveGUIDs | ? { $_.ActiveDirectoryRights -match "GenericAll" } | Select-Object SecurityIdentifier, ObjectDN
   
   # Enumerates the ACLs for the users group
-Get-ObjectAcl -SamAccountName "users" -ResolveGUIDs                         
+	Get-ObjectAcl -SamAccountName "users" -ResolveGUIDs                         
 	# Enumerates the ACLs for the Domain Admins group
-Get-ObjectAcl -SamAccountName "Domain Admins" -ResolveGUIDs                 
+	Get-ObjectAcl -SamAccountName "Domain Admins" -ResolveGUIDs                 
 	# Get the acl associated with a specific prefix
-Get-ObjectAcl -ADSprefix 'CN=Administrator,CN=Users' -Verbose               
+	Get-ObjectAcl -ADSprefix 'CN=Administrator,CN=Users' -Verbose               
 	# Find interesting ACLs
-Invoke-ACLScanner -ResolveGUIDs                                             
+	Invoke-ACLScanner -ResolveGUIDs                                             
 	# Check for modify rights/permissions for the user group
-Invoke-ACLScanner -ResolveGUIDs | ?{$_.IdentityReference -match "user"}     
+	Invoke-ACLScanner -ResolveGUIDs | ?{$_.IdentityReference -match "user"}     
 	# Check for modify rights/permissions for the RDPUsers group
-Invoke-ACLScanner -ResolveGUIDs | ?{$_.IdentityReference -match "RDPusers"} 
+	Invoke-ACLScanner -ResolveGUIDs | ?{$_.IdentityReference -match "RDPusers"} 
 	# Check for modify rights/permissions for the RDPUsers group
-Invoke-ACLScanner | select ObjectDN,ActiveDirectoryRights,IdentityReferenceName
+	Invoke-ACLScanner | select ObjectDN,ActiveDirectoryRights,IdentityReferenceName
 	# Search of interesting ACL's for the current user
-Invoke-ACLScanner | Where-Object {$_.IdentityReference –eq [System.Security.Principal.WindowsIdentity]::GetCurrent().Name}
+	Invoke-ACLScanner | Where-Object {$_.IdentityReference –eq [System.Security.Principal.WindowsIdentity]::GetCurrent().Name}
   ```
 
 - **Enum Domain Trust:**

@@ -42,6 +42,6 @@
   "newLinkFormat": "relative",
   "mobileQuickRibbonItem": "",
   "vimMode": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "defaultViewMode": "source"
 }
