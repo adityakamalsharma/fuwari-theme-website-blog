@@ -116,8 +116,6 @@ draft: false
 
 ## 1. System & Environment Enumeration
 
-################################****START WITH `cmdkey /list` AND POWERSHELL HISTORY. **** ###########################################
-
 |**Tool**|**Command**|
 |---|---|
 |**SystemInfo**|`systeminfo \| findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"`|
@@ -166,8 +164,6 @@ draft: false
 ---
 
 ## 3. User, Group & Domain Enumeration
-
-############### **DO CHECK OUT WITH:** [[3. Windows Execution Context Enumeration Reference]] ##########################
 
 ### Current User Privileges
 

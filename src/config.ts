@@ -62,6 +62,11 @@ export const profileConfig: ProfileConfig = {
 			url: "https://app.hackthebox.com/public/users/1837073", 
 		},
 		{
+			name: "Resume",
+			icon: "fa6-solid:file-pdf",
+			url: "/resume.pdf", 
+		},
+		{
 			name: "OSCP",
 			icon: "fa6-solid:award",
 			url: "https://credentials.offsec.com/12e2f301-f9e7-4263-91f0-97f16d1734ba#acc.rSVTBntX", 
