@@ -1,11 +1,14 @@
 ---
-title: Linux Privesc
+title: Linux Privilege Escalation Cheatsheet
 published: 2026-06-07
 updated: 2026-06-07
-description: ""
-image: ""
-tags: []
-category: ""
+description: Cheatsheet for linux privilege escalation during CTFs and Exams.
+image: linux.png
+tags:
+  - linux
+  - cheatsheet
+  - privesc
+category: Cheatsheet
 draft: false
 ---
 ### 0. FLAG ACQUISITION AND TRUNCATION
