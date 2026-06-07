@@ -3,7 +3,7 @@ title: SQL Injection
 published: 2026-06-07
 updated: 2026-06-07
 description: Cheatsheet and methodology for SQL Injection during CTFs and Exams.
-image: checklist1.png
+image: sql-injection.png
 tags:
   - sql
   - injection
