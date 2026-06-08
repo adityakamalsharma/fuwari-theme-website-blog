@@ -24,7 +24,8 @@ I am a Computer Science and Engineering graduate based in Chandigarh, specializi
 
 ## Contact
 
-- [Resume](https://drive.google.com/file/d/1OPCGUK8fM6jTkUH_GDdYfwHc83-WHCkt/view?usp=drive_link)
+*  [Resume](https://drive.google.com/file/d/1OPCGUK8fM6jTkUH_GDdYfwHc83-WHCkt/view?usp=drive_link)
 *   [GitHub](https://github.com/adityakamalsharma)
 *   [Hack The Box](https://app.hackthebox.com/public/users/1837073)
 *   [Email](mailto:iadityakamalsharma@gmail.com)
+
