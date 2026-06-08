@@ -3,7 +3,7 @@ title: "AI Red Teaming : Part - 1"
 published: 2026-06-08
 updated: 2026-06-08
 description: AI Red Teaming Series. Blog - 1
-image: ""
+image: ai-1.png
 tags:
   - ai_red_teaming
   - artificial_intelligence
